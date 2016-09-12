@@ -11,5 +11,8 @@
   "dependencies": {
     "react": "^15.3.1",
     "react-dom": "^15.3.1"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.5"
   }
 }

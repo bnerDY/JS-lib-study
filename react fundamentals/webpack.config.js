@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
     entry: './main.js',
     output: {
         path: './',
@@ -11,7 +11,7 @@ module.export = {
     module: {
         loaders: [
             {
-                test: / \.js$/,
+                test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'babel',
                 query: {
@@ -20,4 +20,4 @@ module.export = {
             }
         ]
     }
-}
+};
