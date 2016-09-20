@@ -1,8 +1,10 @@
-react fundamentals/.idea/misc.xml
-react fundamentals/.idea/modules.xml
-react fundamentals/node_modules/
-react fundamentals/.idea/jsLibraryMappings.xml
-react fundamentals/.idea/react fundamentals.iml
-react fundamentals/.idea/watcherTasks.xml
-react fundamentals/.idea/workspace.xml
-react fundamentals/.idea/libraries/react_fundamentals_node_modules.xml
+react-fundamentals/.idea/misc.xml
+react-fundamentals/.idea/modules.xml
+react-fundamentals/node_modules/
+react-fundamentals/.idea/jsLibraryMappings.xml
+react-fundamentals/.idea/react fundamentals.iml
+react-fundamentals/.idea/watcherTasks.xml
+react-fundamentals/.idea/workspace.xml
+react-fundamentals/.idea/libraries/react_fundamentals_node_modules.xml
+redux-instagram/learn-redux/.idea/
+redux-instagram/learn-redux/node_modules/
