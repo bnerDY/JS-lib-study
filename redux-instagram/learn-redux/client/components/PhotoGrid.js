@@ -9,6 +9,9 @@ const PhotoGrid = React.createClass({
         return (
             <div className = "photo-grid">
                 photo grid
+                <pre>
+                    {JSON.stringify(this.props.posts, null, 4)}
+                </pre>
             </div>
         )
     }
