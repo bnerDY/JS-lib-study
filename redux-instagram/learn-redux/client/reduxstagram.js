@@ -9,6 +9,24 @@ import App from './components/App';
 import Single from './components/Single';
 import PhotoGrid from './components/PhotoGrid';
 
+import Raven from 'raven-js';
+import { sentry_url, logException } from './data/config';
+
+// //Raven exception.
+// Raven.config(sentry_url, {
+//     tags:{
+//         git_commit: '',
+//         userLevel: 'editor'
+//     }
+// }).install();
+//
+// logException(new Error('download failed'),{
+//    email:'www@mail.com'
+// });
+// Raven.captureMessage("Something bad happened");
+// Raven.showReportDialog();
+
+
 // import react router deps
 import { Router, Route, IndexRoute, browserHistory} from 'react-router';
 import {Provider} from 'react-redux';
