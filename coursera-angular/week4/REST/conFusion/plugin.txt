@@ -1,0 +1,5 @@
+1. install gulp locally
+ npm install gulp --save-dev
+
+ 2. install pluggin
+ npm install jshint gulp-jshint jshint-stylish gulp-imagemin gulp-concat gulp-uglify gulp-minify-css gulp-usemin gulp-cache gulp-changed gulp-rev gulp-rename gulp-notify gulp-ng-annotate browser-sync del --save-dev

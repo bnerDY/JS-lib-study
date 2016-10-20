@@ -1,0 +1,93 @@
+<!-- saved from url=(0315)https://d3c33hcgiwev3.cloudfront.net/_27df4bcf1283b490a6bbb31cc743911e_home.html?Expires=1451260800&Signature=BEGZiA7oqGybJ0QDe1zZFcpnS1n6CLSOYZW36i0FmdU86ZILfDxqm7ofOW~QTOD6pUZMkf1y6uetyH7eNpEP8nKOJTN8rRVOlL6MnvylEb~ME8QMx5R46iFCBTNkiA9ZUDQPSqOC7MiYRwqmde-KbTiyZ5AOw9H2m1LqfMpFRz4_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
+<body>
+    <div class="container" ng-controller="IndexController">
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                <p style="padding:20px;"></p>
+                <h3 align="center">Our Lipsmacking Culinary Creations</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+                <!-- Implement the Featured Dish Here -->
+                <div ng-if="!showDish">
+                    <h3>{{message}}</h3>
+                </div>
+                <div class="media" ng-if="showDish">
+                    <div class="media-left">
+                        <a ui-sref="app.dishdetails({id:0})"><img ng-src="{{dish.image}}" alt="{{dish.name}}"></a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">
+                            {{dish.name}}
+                            <span class="label label-danger">{{dish.label}}</span>
+                            <span class="badge">{{dish.price | currency}}</span>
+                        </h2>
+                        <p>{{dish.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3" >
+                <p style="padding:20px;"></p>
+                <h3 align="center">This Month's Promotions</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <!-- Implement the Promotion Here -->
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="media-heading"> {{promotion.name}}
+                            <span class="label label-danger">{{promotion.label}}</span>
+                            <span class="badge">{{promotion.price | currency}}</span>                    
+                        </h2>
+                        <p>{{promotion.description}}</p>
+                    </div>
+                    <div class="media-right media-middle">
+                        <a href="#">
+                            <img src="{{promotion.image}}" alt={{promotion.name}}>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                <p style="padding:20px;"></p>
+                <h3 align="center">Meet our Culinary Specialists</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+                <!-- Implement the Executive Chef Info Here -->
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="{{leader.image}}" alt="{{leader.name}}">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">{{leader.name}}
+                            <span class="small">{{leader.designation}}</span>
+                        </h2>
+                        <p>{{leader.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: none; position: fixed; top: 0px; left: 0px; z-index: 60000;">
+        <img style="display: block; position: absolute;">
+        <div style="display: block; position: absolute; background-color: rgba(0, 0, 0, 0.34902);"> 
+        </div>
+        <canvas width="120" height="60" style="position: absolute; cursor: crosshair; padding: 0px; margin: 0px;">
+        </canvas>
+        <canvas style="position: fixed; top: 20px; right: 20px;">    
+        </canvas>
+    </div>
+</div>
+</body>
+</html>

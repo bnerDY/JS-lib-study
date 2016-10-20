@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>switch on/off</title>
+		<style>
+		  body {
+			font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+			font-size: 100%;
+			width: 50px;
+		  }
+		  #status {
+			/* avoid an excessively wide status text */
+			white-space: pre;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			max-width: 400px;
+		  }
+		</style>
+    </head>
+    <body>
+        <input type="radio" name="bBlock" id="on"  value="true"/>on
+        <input type="radio" name="bBlock" id="off" value="false"/>off
+        <script src="../js/popup.js"></script>
+    </body>
+</html>
