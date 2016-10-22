@@ -1,3 +1,3 @@
-### My JS library
+### JS-starter
 ===
 repository for js library & framework.
