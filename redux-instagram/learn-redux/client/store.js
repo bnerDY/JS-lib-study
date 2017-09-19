@@ -1,36 +1,34 @@
 /**
  * Created by dy on 9/20/16.
  */
-import {createStore, compose} from 'redux';
-import {syncHistoryWithStore} from 'react-router-redux';
-import {browserHistory} from 'react-router';
-
+import { createStore, compose } from "redux";
+import { syncHistoryWithStore } from "react-router-redux";
+import { browserHistory } from "react-router";
 
 // import root reducer
-import rootReducer from './reducers/index';
+import rootReducer from "./reducers/index";
 
-import comments from './data/comments';
-import posts from './data/posts';
-
+import comments from "./data/comments";
+import posts from "./data/posts";
 
 const defaultState = {
-    posts: posts,
-    comments: comments
+  posts: posts,
+  comments: comments
 };
 
 const enhancers = compose(
-    window.devToolsExtension ? window.devToolsExtension() : f=>f
+  window.devToolsExtension ? window.devToolsExtension() : f => f
 );
 
 const store = createStore(rootReducer, defaultState, enhancers);
 export const history = syncHistoryWithStore(browserHistory, store);
 
 // change reducer without refresh.
-if(module.hot){
-    module.hot.accept('./reducers/', () =>{
-        const nextRootReducer = require('./reducers/index').default;
-        store.replaceReducer(nextRootReducer);
-    });
+if (module.hot) {
+  module.hot.accept("./reducers/", () => {
+    const nextRootReducer = require("./reducers/index").default;
+    store.replaceReducer(nextRootReducer);
+  });
 }
 
 export default store;
