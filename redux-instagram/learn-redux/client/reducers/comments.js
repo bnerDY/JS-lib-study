@@ -6,7 +6,7 @@
 // 2. copy of current state
 function postComments(state = [], action) {
   switch (action.type) {
-    case "ADD_COMMENT":
+    case 'ADD_COMMENT':
       return [
         ...state,
         {
@@ -14,7 +14,7 @@ function postComments(state = [], action) {
           text: action.comment
         }
       ];
-    case "REMOVE_COMMENT":
+    case 'REMOVE_COMMENT':
       return [...state.slice(0, action.i), ...state.slice(action.i + 1)];
     default:
       return state;
@@ -23,7 +23,7 @@ function postComments(state = [], action) {
 }
 
 function comments(state = [], action) {
-  if (typeof action.postId !== "undefined") {
+  if (typeof action.postId !== 'undefined') {
     return {
       ...state,
       [action.postId]: postComments(state[action.postId], action)
