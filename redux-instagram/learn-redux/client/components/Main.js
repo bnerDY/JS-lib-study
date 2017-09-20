@@ -1,8 +1,8 @@
 /**
  * Created by dy on 9/20/16.
  */
-import React from "react";
-import { Link } from "react-router";
+import React from 'react';
+import { Link } from 'react-router';
 
 const Main = React.createClass({
   render() {

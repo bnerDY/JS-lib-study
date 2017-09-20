@@ -1,7 +1,7 @@
 /**
  * Created by dy on 9/21/16.
  */
-import React from "react";
+import React from 'react';
 
 const Comments = React.createClass({
   renderComment(comment, i) {

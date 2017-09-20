@@ -1,10 +1,10 @@
 /**
  * Created by dy on 9/21/16.
  */
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
-import * as actionCreators from "../actions/actionCreators";
-import Main from "./Main";
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as actionCreators from '../actions/actionCreators';
+import Main from './Main';
 
 function mapStateToProps(state) {
   return {

@@ -1,15 +1,15 @@
 /**
  * Created by dy on 9/20/16.
  */
-import React from "react";
-import Photo from "./Photo";
-import Comments from "./Comments";
+import React from 'react';
+import Photo from './Photo';
+import Comments from './Comments';
 
 const Single = React.createClass({
   render() {
     // index of post
     const { postId } = this.props.params;
-    const i = this.props.posts.findIndex(post => post.code === postId);
+    const i = this.props.posts.findIndex((post) => post.code === postId);
     const post = this.props.posts[i];
     const postComments = this.props.comments[postId] || [];
     console.log(post);

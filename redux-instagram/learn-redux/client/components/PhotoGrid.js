@@ -1,8 +1,8 @@
 /**
  * Created by dy on 9/20/16.
  */
-import React from "react";
-import Photo from "./Photo";
+import React from 'react';
+import Photo from './Photo';
 
 const PhotoGrid = React.createClass({
   render() {
